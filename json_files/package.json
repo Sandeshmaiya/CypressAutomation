@@ -1,0 +1,23 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "My first Cypress Project",
+  "main": "index.js",
+  
+  "scripts": {
+      "test": "node_modules/.bin/cypress run",
+      "chromebrowserheaded":"npm run test -- --browser chrome --headed",
+      "mochawesome":"npm run test -- --reporter mochawesome",
+      "dashboard":"npm run test -- --record --key 62b2199d-b6a2-4e73-9a92-8a1ce1e6dea0",
+      "pageobjecttest": "npm run test -- --spec cypress\\integration\\examples\\PageObjectTest.js"
+    },
+
+  "author": "Sandesh",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0",
+    "cypress-iframe": "^1.0.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.0.1"
+  }
+}
